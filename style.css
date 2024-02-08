@@ -130,7 +130,13 @@ button:hover {
     color: white;
 }
 
-@media screen and (max-width: 400px) {
-
+@media screen and (max-width: 900px) {
+body{
+    display:flex;
+    flex-direction: column;
+}
+.banner {
+    margin-top: 5%;
+}
     
 }
