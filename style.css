@@ -79,6 +79,10 @@ input {
     padding: 6px;
     margin-top: 3px;
     font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+    border-style: none;
+    border: solid black 1px;
 }
 .input-group {
     display: flex;
@@ -128,6 +132,25 @@ button:hover {
 }
 .photo-cred a{
     color: white;
+}
+
+.password-box {
+    position: relative;
+}
+
+/* highlighting the input boxes if they're focused. ' */
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="password"]:focus {
+    outline: none;
+    box-shadow: 8px 8px 21px 4px rgba(36,0,176,0.75);
+-webkit-box-shadow: 8px 8px 21px 4px rgba(36,0,176,0.75);
+-moz-box-shadow: 8px 8px 21px 4px rgba(36,0,176,0.75);
+}
+
+.error-message {
+    position: absolute;
+    top: 60px;
+    left: 35px;
+    color: red;
 }
 
 @media screen and (max-width: 900px) {
